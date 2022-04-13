@@ -791,3 +791,231 @@ app/views/articles/new.html.erb:23: syntax error, unexpected end-of-input, expec
 app/views/articles/new.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
 app/views/articles/new.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
 app/views/articles/new.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2022-04-12 21:18:54 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4998)
+  Rendered layout layouts/application.html.erb (Duration: 157.1ms | Allocations: 39599)
+Completed 200 OK in 180ms (Views: 162.6ms | ActiveRecord: 1.5ms | Allocations: 43750)
+
+
+Started GET "/articles/1" for ::1 at 2022-04-12 21:18:57 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 351)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2710)
+Completed 200 OK in 17ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 5481)
+
+
+Started GET "/articles/1/edit" for ::1 at 2022-04-12 21:19:01 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.7ms | Allocations: 1760)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2057)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2148)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 2989)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with model: article do |form| %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+        <%= article.errors.full_messages_for(:title).each.do |message| %>
+
+            <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div>
+        <%= form.label :body %><br>
+        <%= form.text_area :body %><br>
+        <%= article.erros.full_messages_for(:body).each do |message| %>
+            <div><%= message %>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
+
+):
+1:    <%= form_with model: article do |form| %>
+2:        <div>
+3:            <%= form.label :title %><br>
+4:            <%= form.text_field :title %>
+5:            <%= article.errors.full_messages_for(:title).each.do |message| %>
+6:    
+7:                <div><%= message %></div>
+8:          <% end %>
+9:        </div>
+10:    
+11:        <div>
+12:            <%= form.label :body %><br>
+13:            <%= form.text_area :body %><br>
+14:            <%= article.erros.full_messages_for(:body).each do |message| %>
+15:                <div><%= message %>
+16:            <% end %>
+17:        </div>
+18:    
+19:        <div>
+20:            <%= form.submit %>
+21:        </div>
+22:    <% end %>
+  
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1" for ::1 at 2022-04-12 21:19:07 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2478)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 3343)
+
+
+Started GET "/" for ::1 at 2022-04-12 21:19:09 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 707)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2901)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 3185)
+
+
+Started GET "/articles/new" for ::1 at 2022-04-12 21:19:10 -0500
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.0ms | Allocations: 1435)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1646)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1736)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2090)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with model: article do |form| %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+        <%= article.errors.full_messages_for(:title).each.do |message| %>
+
+            <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div>
+        <%= form.label :body %><br>
+        <%= form.text_area :body %><br>
+        <%= article.erros.full_messages_for(:body).each do |message| %>
+            <div><%= message %>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
+
+):
+1:    <%= form_with model: article do |form| %>
+2:        <div>
+3:            <%= form.label :title %><br>
+4:            <%= form.text_field :title %>
+5:            <%= article.errors.full_messages_for(:title).each.do |message| %>
+6:    
+7:                <div><%= message %></div>
+8:          <% end %>
+9:        </div>
+10:    
+11:        <div>
+12:            <%= form.label :body %><br>
+13:            <%= form.text_area :body %><br>
+14:            <%= article.erros.full_messages_for(:body).each do |message| %>
+15:                <div><%= message %>
+16:            <% end %>
+17:        </div>
+18:    
+19:        <div>
+20:            <%= form.submit %>
+21:        </div>
+22:    <% end %>
+  
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:5: syntax error, unexpected ')'
+app/views/articles/_form.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/articles/_form.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/articles/new.html.erb:3
+Started GET "/" for ::1 at 2022-04-12 21:19:15 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 672)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2889)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 3169)
+
+
