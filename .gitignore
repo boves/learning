@@ -69,6 +69,6 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 
-debug/
-**/log
-debug/**
+# Rust files to ignore
+/target/
+Cargo.lock
