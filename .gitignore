@@ -72,3 +72,13 @@ yarn-debug.log*
 # Rust files to ignore
 target/
 Cargo.lock
+
+# rails ignores
+/.bundle
+/db/*.sqlite3
+/log/*.log
+/tmp
+config/database.yml
+config/google_analytics.yml
+/nbproject/
+public/assets/**
