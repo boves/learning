@@ -32,6 +32,6 @@ fn main() {
     println!("The value of y is: {}", y);
 
     // The difference between mutable and immutable
-    // let spaces = "   ";
-    // let spaces = spaces.len();
+    let spaces = "   ";
+    let spaces = spaces.len();
 }
