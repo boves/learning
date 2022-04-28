@@ -1,6 +1,6 @@
 fn main() {
     println!("**************************************************");
-    println!("\n\t\tdata_types/main.rs\n\n\n");
+    println!("\n\t\tdata_types/main.rs\n");
 
     println!("\t\tFloating-Point Numbers");
     let x = 2.0; // f64
@@ -30,13 +30,13 @@ fn main() {
     println!("\tfloored is: {}", floored);
     println!("\tremainder is: {}", remainder);
 
-    println!("\n\n");
+    println!("\n");
     println!("\t\tThe Boolean Type\n");
     
     let t = true; // implicit type annotation
     let f: bool = false; // with explicit type annotation
-    println!("Implicitly, 't' is: {}", t);
-    println!("Explicitly, 'f' is: {}", f);
+    println!("\tImplicitly, 't' is: {}", t);
+    println!("\tExplicitly, 'f' is: {}", f);
     println!("\n");
 
     println!("\t\tThe Character Type");
@@ -46,8 +46,14 @@ fn main() {
 
     println!("\tc is: {}", c); 
     println!("\tz is: {}", z); 
-    println!("\theart_eyed_cat is: {}", heart_eyed_cat); 
+    println!("\theart_eyed_cat is: {}\n", heart_eyed_cat); 
+    
+    println!("\t\tCOMPOUND TYPES");
+    println!("\t\t    tuples");
 
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    println!("\ttup is: {:?}", tup);
+     
     // End of output
     println!("\n\n");
     println!("**************************************************");
