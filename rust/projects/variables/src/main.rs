@@ -50,6 +50,6 @@ fn main() {
 
 
     // End of output
-    println!("\n\n\n");
+    println!("\n\n");
     println!("**************************************************");
 }
