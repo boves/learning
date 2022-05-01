@@ -73,6 +73,14 @@ fn main() {
     println!("\t\t - Five hundred is: {}", five_hundred);
     println!("\t\t - Six point four is: {}", six_point_four);
     println!("\t\t - One is: {}", one);
+    
+    println!("\n\t\t\tArrays");
+    let a = [1, 2, 3, 4, 5];
+
+    println!("\t\t - The array \"a\" is: {:?}", a);
+    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    println!("\t\tThe months are: {:?}", month);
+
 
     // End of output
     println!("\n\n");
