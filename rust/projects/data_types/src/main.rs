@@ -81,7 +81,10 @@ fn main() {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     println!("\t\tThe months are: {:?}", month);
 
-
+    // accessing arrays [in progress]
+    let a2 = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
     // End of output
     println!("\n\n");
     println!("{}", asterisks);
