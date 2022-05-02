@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     // let asterisks =  "**************************************************";
     let asterisks =  "********************************************";
@@ -74,17 +76,40 @@ fn main() {
     println!("\t\t - Six point four is: {}", six_point_four);
     println!("\t\t - One is: {}", one);
     
-    println!("\n\t\t\tArrays");
-    let a = [1, 2, 3, 4, 5];
-
+    println!("\n\t\t\tARRAYS");
+    let a = [3; 5];
     println!("\t\t - The array \"a\" is: {:?}", a);
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
     println!("\t\tThe months are: {:?}", month);
 
     // accessing arrays [in progress]
+    println!("\n\t\t\t accessing items of an array");
+
     let a2 = [1, 2, 3, 4, 5];
-    let first = a[0];
-    let second = a[1];
+    let first = a2[0];
+    let second = a2[1];
+    println!("\t\tFirst is: {} and second is {}", first, second);
+    println!("\t\tPlease enter an array index.");
+
+    let mut index = String::new();
+    io::stdin()
+        .read_line(&mut index)
+        .expect("\t\tFailed to read line");
+    
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("\t\tIndex entered was not a numbrer");
+
+    let element = a2[index];
+
+    println!(
+        "\t\tThe value of an element at index {} is: {}",
+        index, element
+    );
+
+
     // End of output
     println!("\n\n");
     println!("{}", asterisks);
