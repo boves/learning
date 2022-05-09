@@ -5,8 +5,8 @@
 
 fn main() {
 
-    let temp_scale = convert_tempt('c'
-
+    let temp_scale = convert_tempt('c', 20);
+    println!("The temperature in {} is {}°", scale, temp);
 }
 
 fn convert_temp (scale: char, temp: f64) -> char { // &str {
