@@ -5,13 +5,23 @@
 
 fn main() {
 
-    let temp_scale = convert_tempt('c', 20);
-    println!("The temperature in {} is {}°", scale, temp);
+    let temp_scale = convert_temp('c'); //, 20);
+    let scale = 'c';
+
+    if scale == 'c' {
+        println!("Celsius");
+    }
 }
 
-fn convert_temp (scale: char, temp: f64) -> char { // &str {
+fn convert_temp (scale: char){//, temp: f64) -> char { // &str {
     
-    if char == 'c' | 'C' {
-
+    if scale == 'c'{
+        println!("Scale is Celsius");
+        // let celsius =
+        // return scale;
     }
+    // else{
+    //     println!("The scale is Fahrenheit.");
+    //     return scale;
+    // }
 }
