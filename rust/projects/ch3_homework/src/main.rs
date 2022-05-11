@@ -20,8 +20,8 @@ fn convert_temp (scale: char){//, temp: f64) -> char { // &str {
         // let celsius =
         // return scale;
     }
-    // else{
-    //     println!("The scale is Fahrenheit.");
-    //     return scale;
-    // }
+    else{
+         println!("The scale is Fahrenheit.");
+         return scale;
+    }
 }
