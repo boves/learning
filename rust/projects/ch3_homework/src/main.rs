@@ -20,7 +20,22 @@ fn main() {
     println!("*********************");
 
     println!("3. Print the lyrics to the Christmas carol \"The Twelve Days of Christmas,\" taking advantage of the repetition in the song.");
-    the_twelve_days_of_christmas();
+    println!("THE TWELVE DAYS OF CHRISTMAS");
+
+    // the_twelve_days_of_christmas();
+    for day in 1..13 {
+        day_intro(day);
+        for gift_day in (1..(day + 1)).rev(){
+            gift(
+                gift_day,
+                if gift_day == 1 && day != 1 {
+                    "and "
+                } else {
+                    ""
+                },
+            );
+        }
+    }
 }
 
 fn convert_temp (scale: char, temp: i32) {// -> char { // &str {
@@ -49,28 +64,41 @@ fn f(n: i32) -> i32 {
     }
 }
 
-fn the_twelve_days_of_christmas() {
-    // On the twelfth day of Christmas, my true love sent to me
+fn day_intro(n: u32) {
+    let day = match n {
+        1 => "first",
+        2 => "second",
+        3 => "third",
+        4 => "fourth",
+        5 => "fifth",
+        6 => "sixth",
+        7 => "seventh",
+        8 => "eighth",
+        9 => "ninth",
+        10 => "tenth",
+        11 => "eleventh",
+        12 => "twelfth",
+        _ => "",
+    };
 
-    let verses = ["a partridge in a pear tree", "two turtle doves", "three french hens", 
-        "four calling birds", "five golden rings", "seven swans a-swimming", 
-        "six geese a-laying", "eight maids a-milking",  "nine ladies dancing", 
-        "ten lords a-leaping", "eleven pipers piping", "twelve drummers drumming"];
+    println!("\nOn the {} day of Christmas\nmy true love sent me to me:", day);
+}
 
-    let ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
-    // let opening_line = "On the {:?} day of Christmas, my true love sent to me";
-    let mut day = 0;
-
-    while day < 11 {
-        // println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day-1], verses[day-1]);
-        if day == 0 {
-            println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day], verses[day]);
-        } else {
-            let mut i = day;
-            println!("On the {} day of Christmas, my true love gave to me {}, ", ordinals[day], verses[day]);
-            println!("{}, ", verses[day-1]);
-            i -= i;
-        }
-        day -= 1;
-    }
+fn gift(n: u32, prefix: &str) {
+    let gift_text = match n{
+        1 => "a Partridge in a Pear Tree",
+        2 => "Two Turtle Doves",
+        3 => "Three French Hens",
+        4 => "Four Calling Birds",
+        5 => "Five Golden Rings",
+        6 => "Six Geese a Laying",
+        7 => "Seven Swans a Swimming",
+        8 => "Eight Maids a Milking",
+        9 => "Nine Ladies Dancing",
+        10 => "Ten Lords a Leaping",
+        11 => "Eleven Pipers Piping",
+        12 => "12 Drummers Drumming",
+        _ => "",
+    };
+    println!("{}{}", prefix, gift_text);
 }
