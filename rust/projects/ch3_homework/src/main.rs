@@ -2,7 +2,6 @@
 // 2. Generate the nth Fibonacci number.
 // 3. Print the lyrics to the Christmas carol “The Twelve Days of Christmas,” taking advantage of the repetition in the song.
 
-
 fn main() {
 
     println!("");
@@ -21,6 +20,7 @@ fn main() {
     println!("*********************");
 
     println!("3. Print the lyrics to the Christmas carol \"The Twelve Days of Christmas,\" taking advantage of the repetition in the song.");
+    the_twelve_days_of_christmas();
 }
 
 fn convert_temp (scale: char, temp: i32) {// -> char { // &str {
@@ -50,17 +50,21 @@ fn f(n: i32) -> i32 {
 }
 
 fn the_twelve_days_of_christmas() {
-On the twelfth day of Christmas, my true love sent to me
+    // On the twelfth day of Christmas, my true love sent to me
 
-verses = ["A partridge in a pear tree", "Two turtle doves, and", "Three french hens", 
-    "Four calling birds", "Five golden rings", "Seven swans a-swimming", 
-    "Six geese a-laying", "Eight maids a-milking",  "Nine ladies dancing", 
-    "Ten lords a-leaping", "Eleven pipers piping", "Twelve drummers drumming"]
+    let verses = ["a partridge in a pear tree", "two turtle doves,", "three french hens", 
+        "four calling birds", "five golden rings", "seven swans a-swimming", 
+        "six geese a-laying", "eight maids a-milking",  "nine ladies dancing", 
+        "ten lords a-leaping", "eleven pipers piping", "twelve drummers drumming"];
 
+    let ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
+    // let opening_line = "On the {:?} day of Christmas, my true love sent to me";
+    let mut day = 1;
+    println!("On the {} day of Christams, my true love gave to me {}.", ordinals[day-1], verses[day-1]);
 
-
-
-ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "twelfth"] 
-opening_line = "On the {:?} day of Christmas, my true love sent to me"
-    
+    while day < 12 {
+        println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day-1], verses[day-1]);
+        println!("{}", verses[day]);
+        day += 1;
+    }
 }
