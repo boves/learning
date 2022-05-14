@@ -52,19 +52,25 @@ fn f(n: i32) -> i32 {
 fn the_twelve_days_of_christmas() {
     // On the twelfth day of Christmas, my true love sent to me
 
-    let verses = ["a partridge in a pear tree", "two turtle doves,", "three french hens", 
+    let verses = ["a partridge in a pear tree", "two turtle doves", "three french hens", 
         "four calling birds", "five golden rings", "seven swans a-swimming", 
         "six geese a-laying", "eight maids a-milking",  "nine ladies dancing", 
         "ten lords a-leaping", "eleven pipers piping", "twelve drummers drumming"];
 
     let ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
     // let opening_line = "On the {:?} day of Christmas, my true love sent to me";
-    let mut day = 1;
-    println!("On the {} day of Christams, my true love gave to me {}.", ordinals[day-1], verses[day-1]);
+    let mut day = 0;
 
-    while day < 12 {
-        println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day-1], verses[day-1]);
-        println!("{}", verses[day]);
-        day += 1;
+    while day < 11 {
+        // println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day-1], verses[day-1]);
+        if day == 0 {
+            println!("On the {} day of Christmas, my try love gave to me {}, ", ordinals[day], verses[day]);
+        } else {
+            let mut i = day;
+            println!("On the {} day of Christmas, my true love gave to me {}, ", ordinals[day], verses[day]);
+            println!("{}, ", verses[day-1]);
+            i -= i;
+        }
+        day -= 1;
     }
 }
