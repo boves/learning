@@ -1,4 +1,6 @@
 fn main() {
+
+
     let mut s = String::from("hello");
 
     s.push_str(", world!"); // push_str() appends a literal to a String
@@ -24,6 +26,20 @@ fn main() {
                         // but i32 is a copy, so it's ok to still
                         // use x afterwards
 
+
+    // Return Values and Scope
+    println!("Return values and scope");
+
+    let s1 = gives_ownership();
+
+    let s2 = String::from("hello");
+    let s3 = takes_and_gives_back(s2);
+
+    // Returning ownership of parameters
+    let s1 = String::from("hello");
+
+    let (s2, len) = calculate_length(s1);
+
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
@@ -35,3 +51,19 @@ fn main() {
 fn makes_copy(some_integer: i32) { // some_integer comes into scope
     println!("{}", some_integer);
 } // some integer goes out of scope. Nothing special happens.
+
+fn gives_ownership() -> String {
+
+    let some_string = String::from("yours");
+    some_string
+}
+
+fn takes_and_gives_back(a_string: String) ->
+String {
+    a_string
+}
+
+fn calculate_length(s: String) ->(String, usize){
+    let length = s.len();
+    (s, length)
+}
