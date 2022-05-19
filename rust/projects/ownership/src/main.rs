@@ -39,7 +39,36 @@ fn main() {
     let s1 = String::from("hello");
 
     let (s2, len) = calculate_length(s1);
+    
+    let len = calculate_length_reference(&s2);
+    println!("The length of '{}' is {}.", s2, len);
+    
+    let mut s_change = String::from("hello");
+    change(&mut s_change);
 
+    println!("S_change is: {}.", s_change);
+
+    let mut s_multiple_refs = String::from("hello");
+   
+    // Multiple but non-simultaneous references to same value
+    {
+        let r1 = &mut s_multiple_refs;
+    }   // r1 goes out of scope here, so we can make a new ref
+    
+    let r2 = &mut s_multiple_refs;
+
+    //  println!("{}, {}", r1, r2);
+
+    let mut big_problem = String::from("hello");
+
+    let r10 = &big_problem;
+    let r20 = &big_problem;
+
+    println!("{} and {}", r10, r20);
+    let r30 = &mut big_problem;
+
+    println!("{}", r30); // no problem!
+    
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
@@ -67,3 +96,11 @@ fn calculate_length(s: String) ->(String, usize){
     let length = s.len();
     (s, length)
 }
+
+fn calculate_length_reference(s: &String) -> usize {
+    s.len()
+}
+
+fn change(some_string: &mut String) {
+     some_string.push_str(", world"); 
+ }
