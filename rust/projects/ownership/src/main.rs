@@ -40,6 +40,7 @@ fn main() {
 
     let (s2, len) = calculate_length(s1);
 
+println!("Time for bed bitches.");
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
