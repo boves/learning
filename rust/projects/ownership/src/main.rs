@@ -46,6 +46,8 @@ fn main() {
     let mut s_change = String::from("hello");
     change(&mut s_change);
 
+    println!("Time for bed bitches.");
+
     println!("S_change is: {}.", s_change);
 
     let mut s_multiple_refs = String::from("hello");
@@ -96,6 +98,7 @@ fn calculate_length(s: String) ->(String, usize){
     let length = s.len();
     (s, length)
 }
+<<<<<<< HEAD
 
 fn calculate_length_reference(s: &String) -> usize {
     s.len()
@@ -104,3 +107,5 @@ fn calculate_length_reference(s: &String) -> usize {
 fn change(some_string: &mut String) {
      some_string.push_str(", world"); 
  }
+=======
+>>>>>>> 1dbd700543b8dd2da1f8fbd07d2cc5f942b1aaf2
