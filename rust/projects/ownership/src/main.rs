@@ -71,6 +71,8 @@ fn main() {
 
     println!("{}", r30); // no problem!
     
+    let reference_to_nothing = dangle();
+     
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
@@ -98,7 +100,6 @@ fn calculate_length(s: String) ->(String, usize){
     let length = s.len();
     (s, length)
 }
-<<<<<<< HEAD
 
 fn calculate_length_reference(s: &String) -> usize {
     s.len()
@@ -106,6 +107,12 @@ fn calculate_length_reference(s: &String) -> usize {
 
 fn change(some_string: &mut String) {
      some_string.push_str(", world"); 
- }
-=======
->>>>>>> 1dbd700543b8dd2da1f8fbd07d2cc5f942b1aaf2
+}
+
+fn dangle() -> &String {
+    let s = String::from("hello");
+
+    // &s // this won't work; it's a dangling reference
+
+    s // this works!
+}
