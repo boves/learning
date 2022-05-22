@@ -71,8 +71,21 @@ fn main() {
 
     println!("{}", r30); // no problem!
     
-    let reference_to_nothing = dangle();
+    // let reference_to_nothing = dangle();
+
+    // The slice type
      
+    println!("THE SLICE TYPE");
+    
+    let mut stronk = String::from("hello world");
+
+    let word = first_words(&stronk); // word will get the value 5
+    println!("Word is: {},", word);
+    stronk.clear();
+
+    println!("Word is: {}", word); 
+    
+
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
@@ -109,10 +122,21 @@ fn change(some_string: &mut String) {
      some_string.push_str(", world"); 
 }
 
-fn dangle() -> &String {
-    let s = String::from("hello");
+// fn dangle() -> String {
+    // let s = String::from("hello");
 
     // &s // this won't work; it's a dangling reference
 
-    s // this works!
+    // s // this works!
+// }
+
+fn first_words(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+    s.len()
 }
