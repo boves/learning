@@ -84,6 +84,13 @@ fn main() {
     stronk.clear();
 
     println!("Word is: {}", word); 
+
+    let s = String::from("hello world");
+
+    let hello = &s[0..5];
+    let world = &s[6..11];
+
+    println!("Spliced back together: {} {}", hello, world);
     
 
 } // Here, x goes out of scope, then s. But because s's value 
