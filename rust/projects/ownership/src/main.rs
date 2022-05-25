@@ -91,6 +91,10 @@ fn main() {
     let world = &s[6..11];
 
     println!("Spliced back together: {} {}", hello, world);
+
+    // I can't be bothered to code today
+    let day = "today";
+    println!("I'm too tired to code, but I must commit {}.", day);
     
 
 } // Here, x goes out of scope, then s. But because s's value 
