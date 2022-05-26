@@ -95,6 +95,11 @@ fn main() {
     // I can't be bothered to code today
     let day = "today";
     println!("I'm too tired to code, but I must commit {}.", day);
+
+    // Had a procedure today
+    let excuse = "procedure";
+
+    println!("I didn't code today because I had a {}, but I'm still making a commit.", excuse);
     
 
 } // Here, x goes out of scope, then s. But because s's value 
