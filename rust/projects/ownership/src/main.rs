@@ -100,7 +100,22 @@ fn main() {
     let excuse = "procedure";
 
     println!("I didn't code today because I had a {}, but I'm still making a commit.", excuse);
-    
+   
+   let s = String::from("hello");
+
+   let slice = &s[0..2];
+   println!("slice is: {}", slice);
+
+   let slice = &s[..2];
+   println!("slice still is: {}", slice); 
+
+   let len = s.len();
+
+   let slice = &s[3..len];
+   println!("slice is: {}", slice);
+   
+   let slice = &s[3..];
+   println!("slice still is: {}", slice); 
 
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
