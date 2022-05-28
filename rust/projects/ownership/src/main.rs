@@ -117,6 +117,16 @@ fn main() {
    let slice = &s[3..];
    println!("slice still is: {}", slice); 
 
+   // Other slices
+   println!("OTHER SLICES");
+
+   let a = [1, 2, 3, 4, 5];
+
+   let slice = &a[1..3];
+
+   println!("slice is: {:?}", slice);
+
+
 } // Here, x goes out of scope, then s. But because s's value 
   // was moved, nothing special happens
  
