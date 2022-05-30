@@ -9,6 +9,8 @@ fn main() {
     println!("user1.email is: {}", user1.email);
     user1.email = String::from("anotheremail@example.com");
     println!("user1.email is now: {}", user1.email);
+
+    println!("user1.username is: {}", user1.username);
 }
 
 struct User {
