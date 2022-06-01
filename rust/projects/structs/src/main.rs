@@ -11,6 +11,13 @@ fn main() {
     println!("user1.email is now: {}", user1.email);
 
     println!("user1.username is: {}", user1.username);
+
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: String::from("another@example.com"),
+        sign_in_count: user1.sign_in_count,
+    };
 }
 
 struct User {
