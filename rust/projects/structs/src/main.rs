@@ -21,6 +21,11 @@ fn main() {
 
     println!("user2.username is: {}", user2.username);
     println!("user2.email is: {}", user2.email);
+    
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+
+    // println!("color is: {:?}, and origin is {:?}.", black, origin);
 }
 
 struct User {
@@ -38,3 +43,6 @@ fn build_user(email: String, username: String) -> User {
         sign_in_count: 1,
     }
 }
+
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
