@@ -18,6 +18,9 @@ fn main() {
         email: String::from("another@example.com"),
         sign_in_count: user1.sign_in_count,
     };
+
+    println!("user2.username is: {}", user2.username);
+    println!("user2.email is: {}", user2.email);
 }
 
 struct User {
