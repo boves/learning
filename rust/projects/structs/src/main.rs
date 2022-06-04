@@ -26,6 +26,14 @@ fn main() {
     let origin = Point(0, 0, 0);
 
     // println!("color is: {:?}, and origin is {:?}.", black, origin);
+    let subject = AlwaysEqual;
+
+    let user3 = UserType2 {
+        email: "email@website.com",
+        username: "anotherusername",
+        active: true,
+        sign_in_count: 1,
+    };
 }
 
 struct User {
@@ -46,3 +54,13 @@ fn build_user(email: String, username: String) -> User {
 
 struct Color(i32, i32, i32);
 struct Point(i32, i32, i32);
+
+// unit-like structs without fields
+struct AlwaysEqual;
+
+struct UserType2 {
+    active: bool,
+    username: &str, // this won't work without lifetime paramete
+    email &str,     // neither will this
+    sign_in_count: u64,
+}
