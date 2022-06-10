@@ -13,6 +13,22 @@ impl Rectangle {
         self.width > 0
     }
 
+    // fn can_hold(&self, other: &Rectangle) -> bool {
+    //    self.width > other.width && self.height > other.height
+    // }
+
+    fn square(size: u32) -> Rectangle{
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+}
+
+// It's not necessary to create a separate impl block
+// to create a method, but this is technically valid
+// syntax. There are other situations where it is relevant, tho.
+impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
@@ -45,4 +61,5 @@ fn main() {
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
     
+    let sq = Rectangle::square(3);    
 }
