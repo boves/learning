@@ -1,28 +1,18 @@
-enum Message {
-    Quit,
-    Move { x: i32, y: i32},
-    Write(String),
-    ChangeColor(i32, i32, i32),
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter
 }
-impl Message {
-    fn call(&self) {
-        // method body
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
     }
 }
 
-enum Option<T> {
-    None,
-    Some(T)
+fn main () {
 }
-
-fn main() {
-    let m = Message::Write(String::from("hello"));
-    m.call();
-
-    let some_number = Some(5);
-    let some_string = Some("a string");
-    
-    let absent_number: std::option::Option<i32> = None;
-
-}
-
