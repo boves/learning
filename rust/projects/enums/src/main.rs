@@ -40,7 +40,7 @@ fn main () {
     match dice_roll {
         3 => add_fancy_hat(),
         7 => remove_fancy_hat(),
-        other => move_player(other),
+        _ => reroll(),
     }
 
     fn add_fancy_hat() {}
