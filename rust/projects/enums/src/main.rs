@@ -47,11 +47,9 @@ fn main () {
     fn remove_fancy_hat() {}
     fn move_player(num_spaces: u8) {}
     fn reroll(){}
-
-    println!("I have no idea what this code actually does, and it doesn't compile haha");
     
     let config_max = Some(3u8);
-    match config_max {
-        Some(max) => println!("The maximum is configured to be {}", max), _ => (),
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
     }
 }
