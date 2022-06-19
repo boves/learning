@@ -52,4 +52,9 @@ fn main () {
     if let Some(max) = config_max {
         println!("The maximum is configured to be {}", max);
     }
+
+    let mut count = 0;
+    match coin {
+        Coin::Quarter(state) => println!("State quarter from {:?}!", state), _ => count += 1,
+    }
 }
