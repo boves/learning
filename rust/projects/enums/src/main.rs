@@ -45,16 +45,8 @@ fn main () {
 
     fn add_fancy_hat() {}
     fn remove_fancy_hat() {}
-    fn move_player(num_spaces: u8) {}
+    fn move_player(num_spaces: u8) {},
+
+    println!("I have no idea what this code actually does, and it doesn't compile haha");
 
 }
-
-
-
-
-
-
-
-
-
-
