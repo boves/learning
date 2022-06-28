@@ -6,10 +6,10 @@ mod front_of_house {
 }
 
 mod customer {
-    use crate::front_of_house::hosting;
+    use crate::front_of_house::hosting::add_to_waitlist;
     pub fn eat_at_restaurant () {
         //relative path
-        hosting::add_to_waitlist();
+        add_to_waitlist();
 
         // Order a breakfast in the summer with Rye toast
         let mut meal = crate::back_of_house::Breakfast::summer("Rye");
