@@ -1,3 +1,9 @@
+// nested paths with self-reference
+use std::io::{self, Write}
+
+// the glob(al) operator
+use std::collections::*; // Be careful with global!
+
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
