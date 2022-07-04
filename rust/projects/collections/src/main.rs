@@ -34,6 +34,13 @@ fn main() {
     // println!("The first element is: {}", first);
     println!("The first element is: {:?}", &v6[0]);
 
+    // iterating over the values in a Vector
+    println!("\nIterating Over a Vector");
+    let v = vec![100, 32, 57];
+    for i in &v {
+        println!("--{}", i);
+
+    }
 
 
 
