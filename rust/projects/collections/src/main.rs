@@ -42,6 +42,10 @@ fn main() {
 
     }
 
+    for i in &mut v {
+        *i += 50;
+    }
+
 
 
     // do stuff with  v2
