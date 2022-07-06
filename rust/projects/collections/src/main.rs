@@ -87,5 +87,39 @@ fn main() {
     s.push_str("bar");
     println!("{:?}", s);
 
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("world!");
+    let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used.
+
+    println!("S2 is {}, and S3 is {}", s2, s3);
+
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+
+    // the + operator can be unwieldy
+    let s = s1 + "-" + &s2 + "-" + &s3;
+    
+    // resetting s1 because the original has been moved
+    let s1 = String::from("tic");
+
+    // so use format for concatenating multiple strings
+    let s = format!("{}-{}-{}", s1, s2, s3);
+    println!("s is \"{}\"", s)
+
     // do stuff with  v2
 } // <- v2 goes out of scope and is freed here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
