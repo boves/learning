@@ -105,7 +105,23 @@ fn main() {
 
     // so use format for concatenating multiple strings
     let s = format!("{}-{}-{}", s1, s2, s3);
-    println!("s is \"{}\"", s)
+    println!("s is \"{}\"", s);
+
+    // indexing strings
+    let s1 = String::from("hello");
+    // let h = s1[0]; // this won't compile, though it looks like it would
+
+    for c in "hello!".chars() {
+        println!("{:?}", c);
+    } 
+
+    let s = "Hello, world!";
+    let my_vec: Vec<char> = s.chars().collect();
+    println!("my_vec[0] is: {}", my_vec[0]);
+    println!("my_vec[1] is: {}", my_vec[1]);
+
+
+
 
     // do stuff with  v2
 } // <- v2 goes out of scope and is freed here
