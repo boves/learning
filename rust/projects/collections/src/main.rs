@@ -120,8 +120,28 @@ fn main() {
     println!("my_vec[0] is: {}", my_vec[0]);
     println!("my_vec[1] is: {}", my_vec[1]);
 
+    //HASHMAPS
+    println!("\nHASHMAPS\n");
+
+    use std::collections::HashMap;
+
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    println!("scores is: {:?}", scores); 
 
 
+    // Using iterators to create hasmaps
+    let teams = vec![String::from("Blue"), String::from("Yellow")];
+    let initial_scores = vec![10, 50];
+
+    println!("teams is: {:?}", teams);
+    println!("initial_scores is: {:?}", initial_scores);
+
+    let mut scores: HashMap<_, _> = 
+        teams.into_iter().zip(initial_scores.into_iter()).collect();
 
     // do stuff with  v2
 } // <- v2 goes out of scope and is freed here
