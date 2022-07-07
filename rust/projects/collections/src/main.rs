@@ -143,6 +143,24 @@ fn main() {
     let mut scores: HashMap<_, _> = 
         teams.into_iter().zip(initial_scores.into_iter()).collect();
 
+    println!("scores is: {:?}", scores);
+
+    let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+
+    // Accessing values inside a Hash Map
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name);
+
+    println!("score is: {:?}", score);
     // do stuff with  v2
 } // <- v2 goes out of scope and is freed here
 
