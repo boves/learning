@@ -133,7 +133,7 @@ fn main() {
     println!("scores is: {:?}", scores); 
 
 
-    // Using iterators to create hasmaps
+    // Using iterators to create hashmaps
     let teams = vec![String::from("Blue"), String::from("Yellow")];
     let initial_scores = vec![10, 50];
 
@@ -170,19 +170,38 @@ fn main() {
         println!("{}: {}", key, value);
     }
 
+    // Updating a hash map
+    println!("\nUpdating a Hash Map");
+
+    let mut scores = HashMap::new(); 
+
+    scores.insert(String::from("Blue"), 10);
+    println!("scores is: {:?}", scores);
+
+    scores.insert(String::from("Blue"), 25);
+    println!("scores is: {:?}", scores);
+
+    println!("Inserting a Value if Key Has No Value");
+
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+
+    scores.entry(String::from("Yellow")).or_insert(50);
+    scores.entry(String::from("Blue")).or_insert(50);
+    println!("{:?}", scores);
+
+    println!("\nUpdating a Value Based on Old Value");
+    
+    let text = "hello world wonderful world";
+
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+
+    println!("{:?}", map);
+
     // do stuff with  v2
 } // <- v2 goes out of scope and is freed here
-
-
-
-
-
-
-
-
-
-
-
-
-
-
