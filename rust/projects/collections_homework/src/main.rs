@@ -3,10 +3,15 @@ fn main() {
     // (when sorted, the value in the middle position) and mode (the value
     // that occurs most often; a hash map will be helpful here) of the list.
 
-    use std::HashMap;
-    vec![60, 70, 80, 90, 10, 20, 30, 40, 50];
+    use std::collections::HashMap;
+    let mut list = vec![60, 70, 80, 90, 10, 20, 30, 40, 50];
 
     // sort the vector
+    list.sort();
+    assert_eq!(list, vec![10, 20, 30, 40, 50, 60, 70, 80, 90]);
+
+    // count the vector
+    let count = list.len();
 
 
     // 2. Convert strings to pig latin. The first consonant of each word is
