@@ -4,14 +4,17 @@ fn main() {
     // that occurs most often; a hash map will be helpful here) of the list.
 
     use std::collections::HashMap;
-    let mut list = vec![60, 70, 80, 90, 10, 20, 30, 40, 50];
+    let mut list = vec![60, 60, 80, 90, 10, 20, 30, 40, 50];
 
     // sort the vector
     list.sort();
-    assert_eq!(list, vec![10, 20, 30, 40, 50, 60, 70, 80, 90]);
+    assert_eq!(list, vec![10, 20, 30, 40, 50, 60, 60, 80, 90]);
 
     // count the vector
     let count = list.len();
+
+    let median = list[4];
+    println!("The median is {:?}", median);
 
 
     // 2. Convert strings to pig latin. The first consonant of each word is
