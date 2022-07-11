@@ -17,6 +17,7 @@ fn main() {
     println!("The median is {:?}", median);
 
     println!("I don't know how to sum a vector");
+    println!("Fam's in from Ireland and I'm lazy, so this is all I get today.");
     
 
 
