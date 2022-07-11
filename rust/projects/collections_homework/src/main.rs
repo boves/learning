@@ -18,6 +18,16 @@ fn main() {
 
     println!("I don't know how to sum a vector");
     println!("Fam's in from Ireland and I'm lazy, so this is all I get today.");
+
+    let mut map = HashMap::new();
+
+    for i in list {
+        let count = map.entry(i).or_insert(0);
+        *count += 1;
+
+    }
+
+    println!("map is : {:?}", map);
     
 
 
