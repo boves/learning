@@ -16,6 +16,9 @@ fn main() {
     let median = list[4];
     println!("The median is {:?}", median);
 
+    println!("I don't know how to sum a vector");
+    
+
 
     // 2. Convert strings to pig latin. The first consonant of each word is
     // moved to the end of the word and “ay” is added, so “first”
