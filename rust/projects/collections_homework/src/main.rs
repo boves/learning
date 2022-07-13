@@ -27,7 +27,11 @@ fn main() {
 
     }
 
+    let mode = String::from("Temporary");
+
     println!("map is : {:?}", map);
+
+    println!("The mode is: {:?}", mode);
     
 
 
