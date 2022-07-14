@@ -1,37 +1,19 @@
+use std::collections::HashMap;
+
 fn main() { 
     // 1. Given a list of integers, use a vector and return the median
     // (when sorted, the value in the middle position) and mode (the value
     // that occurs most often; a hash map will be helpful here) of the list.
 
-    use std::collections::HashMap;
-    let mut list = vec![60, 60, 80, 90, 10, 20, 30, 40, 50];
 
-    // sort the vector
-    list.sort();
-    assert_eq!(list, vec![10, 20, 30, 40, 50, 60, 60, 80, 90]);
+    let numbers = vec![10, 12, 24, 36, 42, 35, 46, 60, 19, 10, 12];
+    let avg = calculate_average(&numbers);
+    let median = calculate_median(&numbers);
+    let mode = calculate_mode(&numbers);
 
-    // count the vector
-    let count = list.len();
-
-    let median = list[4];
-    println!("The median is {:?}", median);
-
-    println!("I don't know how to sum a vector");
-    println!("Fam's in from Ireland and I'm lazy, so this is all I get today.");
-
-    let mut map = HashMap::new();
-
-    for i in list {
-        let count = map.entry(i).or_insert(0);
-        *count += 1;
-
-    }
-
-    let mode = String::from("Temporary");
-
-    println!("map is : {:?}", map);
-
-    println!("The mode is: {:?}", mode);
+    println!("median: {}", median); 
+    println!("average: {}", avg);
+    println!("mode: {}", mode);
     
 
 
@@ -50,3 +32,46 @@ fn main() {
     // in the company by department, sorted alphabetically.
 
 }
+
+fn calculate_median(numbers: &Vec<i32>) -> f32 {
+    let mut sorted = numbers.clone();
+    sorted.sort();
+
+    let mid = sorted.len() / 2;
+    if sorted.len() % 2 == 0 {
+        let x = sorted[mid] as f32;
+        let y = sorted[mid -1] as f32;
+        return (x + y) * 0.5;
+    }
+    sorted[mid] as f32
+
+}
+
+fn calculate_mode(numbers: &Vec<i32>) -> i32 {
+    let mut times = HashMap::new();
+    for x in numbers {
+        let count = times.entry(x).or_insert(0);
+        *count += 1;
+    }
+
+    let mut best_key = numbers[0]; 
+    let mut best_val = times.get(&best_key).unwrap();
+
+    for (key, value) in &times {
+        if value > best_val {
+            best_key = **key;
+            best_val = value;
+        }
+    }
+    best_key
+}
+
+fn calculate_average(numbers: &Vec<i32>) -> f32 {
+    let mut sum = 0;
+    for x in numbers {
+        sum += x;
+    }
+
+    sum as f32 / numbers.len() as f32
+}
+
