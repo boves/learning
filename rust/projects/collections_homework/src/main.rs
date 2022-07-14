@@ -32,6 +32,7 @@ fn main() {
     println!("map is : {:?}", map);
 
     println!("The mode is: {:?}", mode);
+    println!("Well, today I created a branch. I'm going to merge it later or re-write it here");
     
 
 
