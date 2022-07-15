@@ -27,6 +27,15 @@ fn main() {
     // becomes “irst-fay.” Words that start with a vowel have “hay” added to
     // the end instead (“apple” becomes “apple-hay”). Keep in mind the
     // details about UTF-8 encoding!
+    let t1 = String::from("first");
+    let p1 = to_piglatin(&t1);
+    assert_eq!(String::("irst-fay"), p1);
+    let t2 = String::from("apple");
+    let p2 = to_piglatin(&t2);
+    assert_eq!(String::from("apple-hay"), p2);
+    let t3 = String::from("first apple");
+    let p3 = to_piglatin(&t3);
+    assert_eq!(String::from("irst-fay apple-hay"), p3);
 
     
 
@@ -38,7 +47,7 @@ fn main() {
 
 }
 
-
+// 1. Calculating average, median, and mode
 fn calculate_average(nums: &Vec<i32>) -> f32 {
     let mut sum = 0;
     for x in nums {
@@ -81,4 +90,23 @@ fn calculate_mode(nums: &Vec<i32>) -> i32 {
         }
     }
     best_key
+}
+
+// 2. Pig Latin
+fn to_piglatin(text: &String) -> String {
+    let vowels = vec!["a", "o", "u", "e", "i", "y"];
+
+    let words = text.split_whitespace();
+    let mut output = String::new();
+    for (i, word) in words.enumerate() {
+        let first_char = word.chars().next().unwrap();
+        if vowels.contains(&first_char){
+            let pig_word = format!("{}-{}", word, "hay");
+            if i == 0 {
+                output = pig_word;
+            } else {
+                
+            }
+        }
+    }
 }
