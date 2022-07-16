@@ -105,8 +105,16 @@ fn to_piglatin(text: &String) -> String {
             if i == 0 {
                 output = pig_word;
             } else {
-                
+                output = format!("{} {}", output, pig_word);
+            } 
+        } else {
+            let pig_word = format!("{}-{}", &word[1..], format!("{}{}", &word[..1], "ay"));
+            if i == 0 {
+                output = pig_word;
+            } else {
+                output = format!("{} {}", output, pig_word);
             }
         }
     }
+    output
 }
