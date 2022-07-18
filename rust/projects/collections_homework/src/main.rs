@@ -6,7 +6,7 @@ fn main() {
     // that occurs most often; a hash map will be helpful here) of the list.
 
     
-    let mut list = vec![60, 60, 80, 90, 10, 20, 30, 40, 50];
+    let list = vec![60, 60, 80, 90, 10, 20, 30, 40, 50];
 
     let avg = calculate_average(&list);
     let median = calculate_median(&list);
@@ -29,13 +29,23 @@ fn main() {
     // details about UTF-8 encoding!
     let t1 = String::from("first");
     let p1 = to_piglatin(&t1);
-    assert_eq!(String::("irst-fay"), p1);
+
+    assert_eq!(String::from("irst-fay"), p1);
     let t2 = String::from("apple");
     let p2 = to_piglatin(&t2);
     assert_eq!(String::from("apple-hay"), p2);
     let t3 = String::from("first apple");
     let p3 = to_piglatin(&t3);
     assert_eq!(String::from("irst-fay apple-hay"), p3);
+
+    println!("{}", p1);
+    println!("{}", p2);
+    println!("{}", p3);
+
+    let tx = String::from("Pig Latin");
+    let px = to_piglatin(&tx);
+
+    println!("The pig-latin for {:?} is {:?}",tx, px);
 
     
 
@@ -94,7 +104,7 @@ fn calculate_mode(nums: &Vec<i32>) -> i32 {
 
 // 2. Pig Latin
 fn to_piglatin(text: &String) -> String {
-    let vowels = vec!["a", "o", "u", "e", "i", "y"];
+    let vowels = vec!['a', 'o', 'u', 'e', 'i', 'y'];
 
     let words = text.split_whitespace();
     let mut output = String::new();
