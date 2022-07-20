@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std:io:stdin;
 
 fn main() { 
     // 1. Given a list of integers, use a vector and return the median
@@ -57,6 +58,13 @@ fn main() {
 
     println!("EMPLOYEE ROSTER INTERFACE");
     println!("What do you want to do? ")
+    let mut input_string = String::new();
+    stdin().read_line(&mut input_string)
+        .ok()
+        .expect("Failed to read line.");
+
+    
+
 
 }
 
@@ -131,3 +139,5 @@ fn to_piglatin(text: &String) -> String {
     }
     output
 }
+
+// 3. Employee
