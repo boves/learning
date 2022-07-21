@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 use std::collections::HashMap;
 use std::io::stdin;
 
@@ -63,7 +64,10 @@ fn main() {
         .ok()
         .expect("Failed to read line.");
 
-    
+    // let employee_vec = get_employee_and_department(input_string);
+    let test = get_employee_and_department(&String::from("Jake Sales"));
+    // println!("Test is: {:?}", test);
+
 
 
 }
@@ -141,3 +145,35 @@ fn to_piglatin(text: &String) -> String {
 }
 
 // 3. Employee
+fn get_employee_and_department(input: &String) -> (String, String){
+    let  emp_record = ("Jake", "Sales");
+    let employee = String::from(emp_record.0);
+    let department = String::from(emp_record.1);
+
+    let record = (employee, department); 
+    record
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_returns_tuple_records() {
+        let test_string = String::from("Junk Data");
+        let rec = get_employee_and_department(&test_string);
+
+        let expected: (String, String) = ("Jake".to_string(), "Sales".to_string() );
+
+        assert_eq!(rec, expected);
+    }
+
+    #[test]
+    fn it_returns_records() {
+        let input = String::from("Jake Sales");
+        let received = get_employee_and_department(&input);
+
+        let expected: (String, String) = ("Jake".to_string(), "Sales".to_string() );
+        assert_eq!(received, expected);
+    }
+}
