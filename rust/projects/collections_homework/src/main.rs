@@ -1,6 +1,8 @@
 #![allow(unused_variables)]
+#![allow(dead_code)]
 use std::collections::HashMap;
 use std::io::stdin;
+use unicode_segmentation::UnicodeSegmentation;
 
 fn main() { 
     // 1. Given a list of integers, use a vector and return the median
@@ -154,6 +156,12 @@ fn get_employee_and_department(input: &String) -> (String, String){
     record
 }
 
+fn process_text(raw_string: &String) -> Vec<String> {
+    let v = Vec::new();
+    v
+
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -175,5 +183,14 @@ mod tests {
 
         let expected: (String, String) = ("Jake".to_string(), "Sales".to_string() );
         assert_eq!(received, expected);
+    }
+
+    #[test]
+    fn it_can_process_text() {
+        let s = String::from("Add person to department");
+        let mut v: Vec<String> = Vec::new();
+        for g in s.graphemes(true) {
+            &v.push(s[*g]);
+        } 
     }
 }
