@@ -47,4 +47,10 @@ print(re.findall("a.*c", "abbc"))
 print(re.findall("a.*c", "ac"))
 print(re.findall("a.*c", "acc"))
 
+match_results = re.search("ab*c", "ABC", re.IGNORECASE)
+print(match_results.group())
+string = "Everything is <replaced> if it's in <tags>."
+string = re.sub("<.*>", "ELEPHANTS", string)
+print(string)
+
 
