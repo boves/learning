@@ -50,7 +50,105 @@ print(re.findall("a.*c", "acc"))
 match_results = re.search("ab*c", "ABC", re.IGNORECASE)
 print(match_results.group())
 string = "Everything is <replaced> if it's in <tags>."
-string = re.sub("<.*>", "ELEPHANTS", string)
+string = re.sub("<.*?>", "ELEPHANTS", string) # .*? is non-greedy
 print(string)
+
+url = "http://olympus.realpython.org/profiles/dionysus"
+page = urlopen(url)
+html = page.read().decode("utf-8")
+
+pattern = "<title.*?>.*?</title.*?>"
+match_results = re.search(pattern, html, re.IGNORECASE)
+title = match_results.group()
+title = re.sub("<.*?>", "", title) # Remove HTML tags
+print(title)
+
+print("Check Your Understanding")
+print("1. Write a program that grabs the full HTML from the given URL")
+url = "http://olympus.realpython.org/profiles/dionysus"
+html_page = urlopen(url)
+html_text = html_page.read().decode("utf-8")
+
+for string in ["Name:", "Favorite Color:"]:
+	string_start_idx = html_text.find(string)
+	text_start_idx = string_start_idx + len(string)
+
+	next_html_tag_offset = html_text[text_start_idx:].find("<")
+	text_end_idx = text_start_idx + next_html_tag_offset
+
+	raw_text = html_text[text_start_idx : text_end_idx]
+	clean_text = raw_text.strip(" \r\n\t")
+	print(clean_text)
+
+print("Using BeautifulSoup Objects")
+print("***************************")
+
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+
+url = "http://olympus.realpython.org/profiles/dionysus"
+page = urlopen(url)
+html = page.read().decode("utf-8")
+soup = BeautifulSoup(html, "html.parser")
+
+print(soup.get_text())
+
+image1, image2 = soup.find_all("img")
+print(image1.name)
+print(image2.name)
+
+print(image1["src"])
+print(image2["src"])
+
+print(soup.title)
+print(soup.title.string)
+print(soup.find_all("img", src="/static/dionysus.jpg"))
+
+print("Check Your Understanding")
+print("2. Use BeautifulSoup to parse a webpage")
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+base_url = "http://olympus.realpython.org"
+html_page = urlopen(base_url + "/profiles")
+html_text = html_page.read().decode("utf-8")
+
+soup = BeautifulSoup(html_text, "html.parser")
+
+for link in soup.find_all("a"):
+	link_url = base_url + link["href"]
+	print(link_url)
+
+
+print("Interact with HTML forms")
+import mechanicalsoup
+browser = mechanicalsoup.Browser()
+
+url = "http://olympus.realpython.org/login"
+page = browser.get(url)
+
+print(page.soup)
+
+print("Submit a form with MechanicalSoup")
+# 1 
+browser = mechanicalsoup.Browser()
+url = "http://olympus.realpython.org/login"
+login_page = browser.get(url)
+login_html = login_page.soup
+
+# 2
+form = login_html.select("form")[0]
+form.select("input")[0]["value"] = "zeus"
+form.select("input")[1]["value"] = "ThunderDude"
+
+# 3
+profiles_page = browser.submit(form, login_page.url)
+
+print(profiles_page.url)
+
+
+
+
+
 
 
