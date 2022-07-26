@@ -145,10 +145,18 @@ form.select("input")[1]["value"] = "ThunderDude"
 profiles_page = browser.submit(form, login_page.url)
 
 print(profiles_page.url)
+links = profiles_page.soup.select("a")
 
+for link in links:
+		address = link["href"]
+		text = link.text
+		print(f"{text}: {address}")
 
-
-
+base_url = "http://olympus.realpython.org"
+for link in links:
+	address = base_url + link["href"]
+	text = link.text
+	print(f"{text}: {address}")
 
 
 
