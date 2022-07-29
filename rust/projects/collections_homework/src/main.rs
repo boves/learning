@@ -3,6 +3,7 @@
 use std::collections::HashMap;
 use std::io::stdin;
 use unicode_segmentation::UnicodeSegmentation;
+// testing gahddammit.
 
 fn main() { 
     // 1. Given a list of integers, use a vector and return the median
