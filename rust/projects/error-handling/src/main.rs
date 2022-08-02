@@ -1,11 +1,9 @@
 #![allow(unused)]
-fn main() {
-    use std::fs;
-    use std::io;
-    
+use std::error::Error;
+use std::fs::File;
 
-    fn read_username_from_file() -> Result<String, io::Error> {
-        fs::read_to_string("hello.txt")
-    }
-    
+fn main() -> Result<(), Box<dyn Error>> {
+    let f = File::open("hello.txt")?;
+
+    Ok(())
 }
