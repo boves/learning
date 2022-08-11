@@ -22,6 +22,10 @@ fn main() {
     let _i = ImportantExcerpt {
         part: first_sentence
     };
+
+    // static variables are encoded directly in the binary
+    // so are always available
+    let _s: &'static str = "I have a static lifetime.";
 }
 
 fn first_word(s: &str) -> &str {
