@@ -36,6 +36,6 @@ fn first_word(s: &str) -> &str {
             return &s[0..i];
         }
     }
-    &s[..]
+    &s[..] // I thought I wrote this code on Aug 12, but I didn't
 }
 
