@@ -1,5 +1,4 @@
 #[derive(Debug, PartialEq, Copy, Clone)]
-
 enum ShirtColor {
     Red,
     Blue,
@@ -18,7 +17,7 @@ impl Inventory {
         let mut num_red = 0;
         let mut num_blue = 0;
 
-        for color in &self.shirt {
+        for color in &self.shirts {
             match color {
                 ShirtColor::Red => num_red += 1,
                 ShirtColor::Blue => num_blue +=1,
@@ -51,6 +50,19 @@ fn main() {
         "The user with preference {:?} gets {:?}",
         user_pref2, giveaway2
      );
+
+    println!("\nCapturing references or moving ownership with closures");
+
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {:?}", list);
+
+    let mut list = vec![1, 2, 3];
+    println!("Before defining closure: {:?}", list);
+
+    let mut borrows_mutably = || list.push(7);
+
+    borrows_mutably();
+    println!("After calling closure: {:?}", list);
 }
 
 
