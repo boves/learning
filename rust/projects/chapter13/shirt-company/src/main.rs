@@ -51,7 +51,7 @@ fn main() {
         user_pref2, giveaway2
      );
 
-    println!("\nCapturing references or moving ownership with closures");
+    println!("\nCapturing references or moving ownership with closures"ter);
 
     let list = vec![1, 2, 3];
     println!("Before defining closure: {:?}", list);
