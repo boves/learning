@@ -1,5 +1,6 @@
 func foo() {
-    print("Hello world!")
+    let name = CommandLine.arguments[1]
+    print("Hello \(name)!")
 }
 
 foo()
