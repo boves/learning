@@ -3,6 +3,10 @@ pub struct Post {
     content: String,
 }
 
+pub struct DraftPost {
+    content: String,
+}
+
 impl Post {
     pub fn new() -> Post {
         Post {
@@ -77,5 +81,11 @@ impl State for Published {
 
     fn content<'a>(&self, post: &'a Post) ->&'a str {
         &post.content
+    }
+}
+
+impl DraftPost {
+    pub fn add_text(&mut self, text: &str) {
+        self.content.push_str(text);
     }
 }
