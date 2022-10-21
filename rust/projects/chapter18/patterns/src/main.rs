@@ -36,7 +36,10 @@ fn main() {
     let point = (3, 5);
     print_coordinates(&point);
 
-    let Some(x) = some_option_value;
+    if let x = 5 {
+        println!("{}", x);
+    }; 
+    
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
