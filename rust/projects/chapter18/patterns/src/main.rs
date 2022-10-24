@@ -1,3 +1,8 @@
+struct Point {
+    x: i32,
+    y: i32,
+}
+
 fn main() {
     let favorite_color: Option<&str> = None;
     let is_tuesday = false;
@@ -85,8 +90,47 @@ fn main() {
         'k'..='z' => println!("late ASCII letter"),
         _ => println!("something else"),
     }
+
+    // Destructuring structs
+    let p = Point { x:0, y: 7 };
+
+    let Point { x, y } = p;
+    assert_eq!(0, x);
+    assert_eq!(7, y);
+
+    match p {
+        Point { x, y:0 } => println!(" {}", x),
+        Point { x: 0, y } => println!("On the x axis at {}", y),
+        Point { x, y } => println!("On neither axis: ({}, {})", x, y),
+    }
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
     println!("Current location: ({}, {}", x, y);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
