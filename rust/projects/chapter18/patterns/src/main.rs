@@ -166,6 +166,21 @@ fn main() {
     // Ignoring an entire value with _
     foo(3, 4);
 
+    // ignoring parts of a value with a nested _
+    let mut setting_value = Some(5);
+    let new_setting_value = Some(10);
+
+    match (setting_value, new_setting_value) {
+        (Some(_), Some(_)) => {
+            println!("Can't overwrite an existing customized value");
+        }
+        _=> { 
+            setting_value = new_setting_value;
+        }
+    }
+
+    println!("setting is {:?}", setting_value);
+
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
