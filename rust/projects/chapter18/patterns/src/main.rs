@@ -163,12 +163,18 @@ fn main() {
     // Destructuring structs and tuples
     let ((feet, inches), Point { x, y }) = ((3, 10), Point { x: 3, y: -10});
 
+    // Ignoring an entire value with _
+    foo(3, 4);
+
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
     println!("Current location: ({}, {}", x, y);
 }
 
+fn foo(_: i32, y: i32) {
+    println!("This code only uses the y parameter: {}", y);
+}
 
 
 
