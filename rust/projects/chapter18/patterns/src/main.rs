@@ -180,6 +180,7 @@ fn main() {
     }
 
     println!("setting is {:?}", setting_value);
+    println!("setting value could be {:?}, but it's not", new_setting_value);
 
 }
 
