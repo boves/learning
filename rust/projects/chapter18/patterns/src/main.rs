@@ -23,6 +23,12 @@ enum Color {
     Hsv(i32, i32, i32),
 }
 
+struct Point2 {
+    x: i32,
+    y: i32,
+    z: i32,
+}
+
 
 
 fn main() {
@@ -181,6 +187,13 @@ fn main() {
 
     println!("setting is {:?}", setting_value);
     println!("setting value could be {:?}, but it's not", new_setting_value);
+
+    // Ignoring remaining parts of a value with ".."
+    let origin = Point2 { x: 0, y: 0, z:0 };
+
+    match origin {
+        Point2 { x, .. } => println!("x is {}", x),
+    }
 
 }
 
