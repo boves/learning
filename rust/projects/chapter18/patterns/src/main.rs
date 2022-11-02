@@ -205,6 +205,9 @@ fn main() {
     }
 
 
+    let x = Some(5);
+
+
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
