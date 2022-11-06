@@ -225,6 +225,14 @@ fn main() {
         _ => println!("anything"),
     }
 
+    // Matching ranges of values with ..=
+    let x = 5;
+
+    match x {
+        1..=5 => println!("one through five"),
+        _ => println!("something else"),
+    }
+
 
 }
 
