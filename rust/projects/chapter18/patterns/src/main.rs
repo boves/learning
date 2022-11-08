@@ -241,6 +241,12 @@ fn main() {
         _ => println!("something else"),
     }
 
+    // Destructuring to break apart values
+    let p = Point { x: 0, y: 7 };
+
+    let Point { x: a, y: b } = p;
+    assert_eq!(0, a);
+    assert_eq!(7, b);
 
 }
 
