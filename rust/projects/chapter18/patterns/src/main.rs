@@ -248,6 +248,11 @@ fn main() {
     assert_eq!(0, a);
     assert_eq!(7, b);
 
+    let Point { x, y } = p;
+    assert_eq!(0, x);
+    assert_eq!(7, y);
+
+
 }
 
 fn print_coordinates(&(x, y): &(i32, i32)) {
