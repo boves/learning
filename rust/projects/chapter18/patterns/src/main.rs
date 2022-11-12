@@ -29,6 +29,10 @@ struct Point2 {
     z: i32,
 }
 
+enum Message3 {
+    Hello { id: i32 },
+}
+
 
 
 fn main() {
@@ -260,6 +264,13 @@ fn main() {
         Point { x, y } => println!("On neither axis: ({}, {})", x, y),
     }
 
+    // @ bindings
+    let msg = Message3::{ id: 5 };
+
+    match msg {
+        // start here
+    }
+
 
 }
 
@@ -270,7 +281,6 @@ fn print_coordinates(&(x, y): &(i32, i32)) {
 fn foo(_: i32, y: i32) {
     println!("This code only uses the y parameter: {}", y);
 }
-
 
 
 
