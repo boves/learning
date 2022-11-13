@@ -265,10 +265,16 @@ fn main() {
     }
 
     // @ bindings
-    let msg = Message3::{ id: 5 };
+    let msg = Message3::Hello{ id: 5 };
 
     match msg {
-        // start here
+        Message3::Hello {
+            id: id_variable @ 3..=7,
+        } => println!("Found an id in range: {}",id_variable ),
+        Message3::Hello { id: 0..=12 } => {
+            println!("Found an id in another range")
+        }
+        Message3::Hello { id } => println!("Found some other id: {}", id),
     }
 
 
