@@ -5,3 +5,5 @@ url = "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/titanic
 titanic = pd.read_csv(url)
 
 titanic.head(8)
+
+titanic[0] # Not sure if this will work but I'm rushing out the door 
