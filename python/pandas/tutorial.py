@@ -7,3 +7,5 @@ titanic = pd.read_csv(url)
 titanic.head(8)
 
 titanic["PassengerId"] # fixed.
+
+titanic["Survived"]
