@@ -9,3 +9,5 @@ titanic.head(8)
 titanic["PassengerId"] # fixed.
 
 titanic["Survived"]
+
+titanic["pclass"]
