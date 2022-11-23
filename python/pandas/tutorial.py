@@ -4,10 +4,9 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/titanic.csv"
 titanic = pd.read_csv(url)
 
+# Data exploration
 titanic.head(8)
-
 titanic["PassengerId"] # fixed.
-
 titanic["Survived"]
-
-titanic["pclass"]
+titanic["Pclass"]
+titanic.dtypes
