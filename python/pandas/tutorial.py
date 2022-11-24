@@ -10,3 +10,6 @@ titanic["PassengerId"] # fixed.
 titanic["Survived"]
 titanic["Pclass"]
 titanic.dtypes
+
+ages = titanic.head["Age"]
+ages.head()
