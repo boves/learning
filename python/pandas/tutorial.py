@@ -11,5 +11,7 @@ titanic["Survived"]
 titanic["Pclass"]
 titanic.dtypes
 
-ages = titanic.head["Age"]
+ages = titanic["Age"]
 ages.head()
+type(titanic["Age"])
+titanic["Age"].shape
