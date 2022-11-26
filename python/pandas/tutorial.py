@@ -15,3 +15,6 @@ ages = titanic["Age"]
 ages.head()
 type(titanic["Age"])
 titanic["Age"].shape
+
+age_sex = titanic[["Age", "Sex"]]
+age_sex.head()
