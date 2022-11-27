@@ -18,3 +18,6 @@ titanic["Age"].shape
 
 age_sex = titanic[["Age", "Sex"]]
 age_sex.head()
+
+above_35 = titanic[titanic["Age"] > 35]
+above_35.head()
