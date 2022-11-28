@@ -21,3 +21,4 @@ age_sex.head()
 
 above_35 = titanic[titanic["Age"] > 35]
 above_35.head()
+class_23 = titanic[titanic["Pclass"].isin([2, 3])]
