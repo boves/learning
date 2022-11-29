@@ -22,3 +22,8 @@ age_sex.head()
 above_35 = titanic[titanic["Age"] > 35]
 above_35.head()
 class_23 = titanic[titanic["Pclass"].isin([2, 3])]
+class_23.head()
+age_no_na = titanic[titanic["Age"].notna()]
+age_no_na.head()
+age_no_na.shape
+adult_names = titanic.loc[titanic["Age"] > 35]
