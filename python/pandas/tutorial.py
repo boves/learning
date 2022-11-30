@@ -28,3 +28,5 @@ age_no_na.head()
 age_no_na.shape
 adult_names = titanic.loc[titanic["Age"] > 35]
 titanic.iloc[9:25, 2:5]
+titanic.iloc[0:3, 3] = "anonymous"
+titanic.head()
