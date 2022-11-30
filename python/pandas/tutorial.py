@@ -27,3 +27,4 @@ age_no_na = titanic[titanic["Age"].notna()]
 age_no_na.head()
 age_no_na.shape
 adult_names = titanic.loc[titanic["Age"] > 35]
+titanic.iloc[9:25, 2:5]
