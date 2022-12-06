@@ -1,5 +1,7 @@
 use std::slice;
-
+extern "C" {
+    fn abs(input: i32) -> i32;
+}
 fn main() {
     let address = 0x012345usize;
     let r = address as *const i32;
@@ -30,7 +32,9 @@ fn main() {
     assert_eq!(a, &mut [1, 2, 3]);
     assert_eq!(b, &mut [4, 5, 6]);
 
-
+    unsafe {
+        println!("Absolute value of -3 according to C: {}", abs(-3));
+    }
 
 
 }
