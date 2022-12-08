@@ -7,3 +7,6 @@ air_quality["ratio_paris_antwerp"] = (
     air_quality["station_paris"] / air_quality["station_antwerp"]
 )
 air_quality.head()
+air_quality_renamed = air_quality_renamed.rename(columns=str.lower)
+
+air_quality_renamed.head()
