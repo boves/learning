@@ -10,3 +10,8 @@ titanic.agg(
         "Fare": ["min", "max", "median", "mean"],
     }
 )
+titanic.groupby("Sex").mean(numeric_only=True)  # line 9
+titanic[["Sex", "Age"]].groupby("Sex").mean()   # line 10
+titanic.groupby(["Sex", "Pclass"])["Fare"].mean() # line 11
+titanic["Pclass"].value_counts() # line 12
+titanic.groupby("Pclass")["Pclass"].count() # line 13
