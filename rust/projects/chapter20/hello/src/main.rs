@@ -17,6 +17,11 @@ fn main() {
 
 fn handle_connection(mut stream: TcpStream) {
     let buf_reader = BufReader::new(&mut stream);
+    let request_line = buf_reader.lines().lines.next.unwrap();
+
+    if request_line == "GET / HTTP/1.1" {
+        let status_line = ""
+    }
     let http_request: Vec<_> = buf_reader
         .lines()
         .map(|result| result.unwrap())
