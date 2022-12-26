@@ -20,7 +20,7 @@ fn handle_connection(mut stream: TcpStream) {
     let request_line = buf_reader.lines().lines.next.unwrap();
 
     if request_line == "GET / HTTP/1.1" {
-        let status_line = ""
+        let status_line = "HTTP/1.1 200 OK";
     }
     let http_request: Vec<_> = buf_reader
         .lines()
