@@ -11,9 +11,10 @@ fn main() {
     
     for stream in listener.incoming() {
         let stream = stream.unwrap();
-
-        handle_connection(stream);
-        println!("Connection established!");
+        
+        thread::spanw(|| {
+            handle_connection(stream);
+        });
     }
 }
 
