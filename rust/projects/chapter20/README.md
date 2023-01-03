@@ -1,1 +1,2 @@
-https://doc.rust-lang.org/book/ch20-01-single-threaded.html
+- https://doc.rust-lang.org/book/ch20-01-single-threaded.html
+- https://doc.rust-lang.org/book/ch20-02-multithreaded.html
