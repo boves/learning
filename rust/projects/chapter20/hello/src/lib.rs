@@ -6,4 +6,10 @@ impl ThreadPool {
         F: FnOnce() + Send + 'static,
     {
     }
+
+    pub fn new(size: usize) -> ThreadPool {
+        assert!(size > 0);
+
+        ThreadPool
+    }
 }
