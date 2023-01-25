@@ -1,1 +1,0 @@
-https://gridbyexample.com/examples/example1/
