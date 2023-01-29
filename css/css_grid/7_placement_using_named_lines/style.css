@@ -6,6 +6,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
@@ -23,19 +24,20 @@ body {
 /* Row start, column start, row end, column end */
 
 .a {
-    grid-column: 1 / span 2;
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start;
 }
 .b {
-    grid-column: 3;
-    grid-row: 1 / span 2;
+    grid-column: col3-start;
+    grid-row: row1-start / row2-end;
 }
 .c {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: col1-start;
+    grid-row: row2-start;
 }
 .d {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: col2-start;
+    grid-row: row2-start;
 }
 .e {
     display: none;
