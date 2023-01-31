@@ -1,0 +1,48 @@
+body {
+    margin: 40px;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100px );
+    grid-auto-columns: 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+/* Notation scheme */
+/* Row start, column start, row end, column end */
+
+.a {
+    grid-column: 1 / 3;
+    grid-row:  1;
+}
+.b {
+    grid-column: 
+    grid-row: 
+}
+.c {
+    grid-column: 
+    grid-row: 
+}
+.d {
+    grid-column: 
+    grid-row: 
+}
+.e {
+    grid-column: 
+    grid-row: 
+}
+.f {
+    display: none;
+}
