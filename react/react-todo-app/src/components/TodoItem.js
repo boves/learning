@@ -6,7 +6,7 @@ const TodoItem = (props) => {
             <input 
                 type="checkbox" 
                 checked={props.todo.completed}
-                onChange={() => props.handleChangeProps() } // console.log("clicked")}
+                onChange={() => props.handleChangeProps(props.todo.id) } // console.log("clicked")}
             /> {props.todo.title}
         </li>
     )

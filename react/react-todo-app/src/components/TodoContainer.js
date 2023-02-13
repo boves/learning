@@ -22,8 +22,8 @@ class TodoContainer extends React.Component {
             }
         ]
     };
-    handleChange = () => {
-        console.log("clicked from todoContainer")
+    handleChange = (id) => {
+        console.log("Checkbox", id, "clicked from todoContainer");
     };
 
     render () {
