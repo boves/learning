@@ -8,7 +8,7 @@ const TodoItem = (props) => {
                 checked={props.todo.completed}
                 onChange={() => props.handleChangeProps(props.todo.id) } // console.log("clicked")}
             /> 
-            <button onClick={()=> this.props.deleteTodoProps(this.props.todo.id)}>
+            <button onClick={()=> props.deleteTodoProps(props.todo.id)}>
                 Delete
             </button>
             {props.todo.title}
