@@ -1,12 +1,15 @@
-import Header from './Header';
+import React from 'react';
+import Header from '@/components/Header';
 import TodosLogic from './TodosLogic';
+
 
 const TodoApp = () => {
     return (
-        <div>
-            <Header />
-            <TodosLogic />
-        </div>
-    )
-}
-export default TodoApp
+      <React.Fragment>
+        <Header />
+        <TodosLogic />
+      </React.Fragment>
+    );
+  };
+  export default TodoApp;
+  
