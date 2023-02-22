@@ -42,6 +42,14 @@ const TodosLogic = () => {
         }),
       ]);
     };
+    const addTodoItem = (title) => {
+      const newTodo = {
+        id: 4,
+        title: title,
+        completed: false,
+      };
+      setTodos([...todos, newTodo]);
+    }; 
 
     return (
       <div>
@@ -51,6 +59,7 @@ const TodosLogic = () => {
           setTodos={setTodos} 
           handleChange={handleChange}
           delTodo={delTodo}
+          addTodoItem={addTodoItem}
         />
       </div>
     )
