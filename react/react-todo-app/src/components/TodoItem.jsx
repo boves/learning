@@ -9,6 +9,6 @@ const TodoItem = ({ itemProp, handleChange, delTodo }) => {
             <button onClick={() => delTodo(itemProp.id)}>Delete</button>
             {itemProp.title}
         </li>
-    )
+    );
 };
 export default TodoItem;

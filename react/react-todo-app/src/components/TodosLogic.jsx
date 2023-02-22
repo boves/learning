@@ -54,7 +54,7 @@ const TodosLogic = () => {
 
     return (
       <div>
-        <InputTodo />
+        <InputTodo addTodoItem={addTodoItem} />
         <TodosList 
           todosProps={todos} 
           setTodos={setTodos} 
