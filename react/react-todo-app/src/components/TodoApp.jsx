@@ -5,10 +5,12 @@ import TodosLogic from './TodosLogic';
 
 const TodoApp = () => {
     return (
-      <React.Fragment>
-        <Header />
-        <TodosLogic />
-      </React.Fragment>
+      <div className='wrapper'>
+        <div>
+          <Header />
+          <TodosLogic />
+        </div>
+      </div>
     );
   };
   export default TodoApp;
