@@ -18,6 +18,11 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
     } else {
         editMode.display = 'none'
     }
+    const handleUpdatedDone = (event) => {
+        if (event.key === 'Enter') {
+            setEditing(false);
+        }
+    };
     return (
         <li className={styles.item}>
             <div className={styles.content} style={viewMode}>
@@ -38,6 +43,7 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
                 className={styles.textInput}
                 style={editMode}
                 onChange={(e) => console.log(e.target.value, itemProp.id)}
+                onKeyDown={handleUpdatedDone}
             />
         </li>
     );
