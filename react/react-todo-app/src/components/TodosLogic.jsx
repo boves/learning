@@ -1,6 +1,6 @@
 import InputTodo from "@/components/InputTodo";
 import TodosList from "@/components/TodosList";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { v4 as uuidv4 } from "uuid";
 
 const TodosLogic = () => {
@@ -60,8 +60,13 @@ const TodosLogic = () => {
           return todo;
         })
       );
-   };
-
+    };
+    useEffect(() => {
+      // storing todos items
+      const temp = JSON.stringify(todos);
+      localStorage.setItem('todos', temp);
+    }, [todos]);
+   
     return (
       <div>
         <InputTodo addTodoItem={addTodoItem} />
