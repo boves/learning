@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 const TodosContext = createContext(null);
 
@@ -10,4 +10,4 @@ export const TodosProvider = ({ children }) => {
 
     );
 };
-export { TodosContext };
+export const useTodosContext = () => useContext(TodosContext);
