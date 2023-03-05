@@ -1,6 +1,11 @@
 import InputTodo from "@/components/InputTodo";
 import TodosList from "@/components/TodosList";
-import { useState, useEffect } from 'react'
+import { 
+  useState, 
+  useEffect,
+  createContext,
+  useContext,
+} from 'react';
 import { v4 as uuidv4 } from "uuid";
 import { TodosProvider } from "@/context/TodosContext";
 
