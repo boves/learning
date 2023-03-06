@@ -66,15 +66,8 @@ const TodosLogic = () => {
    
     return (
       <TodosProvider>
-        <InputTodo addTodoItem={addTodoItem} />
-        <TodosList 
-          todosProps={todos} 
-          setTodos={setTodos} 
-          handleChange={handleChange}
-          delTodo={delTodo}
-          addTodoItem={addTodoItem}
-          setUpdate={setUpdate}
-        />
+        <InputTodo />
+        <TodosList />
       </TodosProvider>
     )
   }
