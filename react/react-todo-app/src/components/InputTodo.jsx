@@ -2,14 +2,16 @@ import { useState } from 'react';
 import { FaPlusCircle } from "react-icons/fa"
 import { useTodosContext } from '@/context/TodosContext';
 
-const InputTodo = ({ useTodosContext }) => {
-    const { addTodoItem } = useTodosContext();
+const InputTodo = () => {
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
+
+    const { addTodoItem } = useTodosContext();
 
     const handleChange = (e) => {
         setTitle(e.target.value);
     };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (title.trim()) {
