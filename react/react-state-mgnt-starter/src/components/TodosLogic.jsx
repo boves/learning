@@ -3,7 +3,7 @@ import TodosList from '@/components/TodosList';
 const TodosLogic = () => {
   return (
     <div>
-      <TodosList />
+      <InputTodo /> 
       <TodosList />
     </div>
   );
