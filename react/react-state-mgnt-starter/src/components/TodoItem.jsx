@@ -4,8 +4,14 @@ import styles from '@/styles/TodoItem.module.css';
 import { FaTrash } from 'react-icons/fa';
 import { AiFillEdit } from 'react-icons/ai';
 
-const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
+import { useTodosStore } from '@/store';
+
+const TodoItem = ({ itemProp }) => {
   const [editing, setEditing] = useState(false);
+
+  const handleChange = useTodosStore ((state.handleChange));
+  const delTodo = useTodosStore ((state.handleChange));
+  const setUpdate = useTodosStore ((state.handleChange));
 
   const editInputRef = useRef(null);
 

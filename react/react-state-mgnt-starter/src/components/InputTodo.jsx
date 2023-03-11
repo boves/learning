@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
 import { useTodosStore } from '@/store';
 
-const InputTodo = ({ addTodoItem }) => {
+const InputTodo = ({ useTodosStore }) => {
+
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
   const addTodoItem = useTodosStore((state) => state.addTodoItem);
