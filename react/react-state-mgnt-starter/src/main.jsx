@@ -5,14 +5,14 @@ import TodoApp from '@/components/TodoApp';
 
 import '@/styles/app.css';
 // import './styles/app.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const domContainer = document.getElementById('root');
 const root = ReactDOM.createRoot(domContainer);
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <TodoApp />
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
