@@ -5,10 +5,11 @@ import About from '@/routes/About';
 import Login from '@/routes/Login';
 import Profile from '@/routes/Profile';
 import NotMatch from '@/routes/NotMatch';
+import Layout from '@/Layout';
 
 const TodoApp = () => {
     return (
-        <Routes>
+        <Routes path ="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="login" element={<Login />} />
