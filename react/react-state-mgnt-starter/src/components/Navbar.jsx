@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const links = [
     { path: '/', text: 'Home' },
     { path: 'about', text: 'About' },
@@ -11,7 +12,7 @@ const Navbar = () => {
             {links.map((link) => {
               return (
                 <li key={link.text}>
-                  <a href={link.path}>{link.text}</a>
+                  <NavLink href={link.path}>{link.text}</NavLink>
                 </li>
               );
             })}
