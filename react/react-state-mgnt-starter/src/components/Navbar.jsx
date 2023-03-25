@@ -12,7 +12,14 @@ const Navbar = () => {
             {links.map((link) => {
               return (
                 <li key={link.text}>
-                  <NavLink href={link.path}>{link.text}</NavLink>
+                  <NavLink 
+                    to={link.path}
+                    className={( { isActive}) =>
+                      isActive ? 'active__class' : undefined
+                  }
+                  >
+                    {link.text}
+                  </NavLink>
                 </li>
               );
             })}
