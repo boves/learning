@@ -15,10 +15,15 @@ const aboutData = [
   ];
   
 const SinglePage = () => {
-    return (
-        // console.log(useParams());
-        <div className="main_content">
-            single page content
-        </div>
-    );
+  const { slug } = useParams();
+  const aboutContent = aboutData.find((item) => item.slug === slug);
+  const { title, description} = aboutContent;
+  return (
+      // console.log(useParams());
+      <div className="main_content">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+  );
 };
+export default SinglePage;
