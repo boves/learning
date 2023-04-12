@@ -6,7 +6,13 @@ const ProtectedRoute = ({ children }) => {
   const location = useLocation();
   console.log(location);
   if (!user) {
-    return <Navigate to="/login" />;
+    return (
+      <Navigate 
+        to="/login" 
+        state={{ pathname: location.pathname }}
+        replace
+      />
+    );
   }
   return children;
 };

@@ -11,13 +11,13 @@ const Login = () => {
     const { login } = useAuthContext();
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
+    const from = location.state?.pathname || '/';
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!username) return;
         login(username);
         setUsername('');
-        navigate('/');
+        navigate(from, {replace: true});
     }
     return (
         <div>
