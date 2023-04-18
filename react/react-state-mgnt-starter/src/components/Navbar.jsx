@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuthContext } from "@/context/AuthContext";
+import React, { useState } from 'react';
 
 const links = [
     { path: '/', text: 'Home' },
@@ -8,6 +9,7 @@ const links = [
     { path: 'login', text: 'Login' },
 ];
 const Navbar = () => {
+    const [navbarOpen, setNavbarOpen] = useState(false);
     const {user, logout } = useAuthContext();
     const handleLogout = () => {
       logout();
@@ -15,6 +17,12 @@ const Navbar = () => {
     return (
       <>
         <nav className="navbar">
+          <button
+            className="toggle"
+            onClick={() => setNavbarOpen((prev) => !prev)}
+          >
+            {navbarOpen ? 'close': 'open'}
+          </button>
         <ul>
           {links.map((link) => {
             return (
