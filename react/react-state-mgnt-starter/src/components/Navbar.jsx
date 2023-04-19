@@ -23,7 +23,7 @@ const Navbar = () => {
           >
             {navbarOpen ? 'close': 'open'}
           </button>
-        <ul>
+        <ul className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
           {links.map((link) => {
             return (
               <React.Fragment key={link.text}>
