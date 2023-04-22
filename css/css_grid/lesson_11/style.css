@@ -15,8 +15,8 @@ body {
 .wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3, 120px );
-    grid-template-columns: 
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas: 
         "....... header header"
         "sidebar content content";
     background-color: #fff;
