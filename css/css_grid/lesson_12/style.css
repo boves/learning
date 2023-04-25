@@ -11,10 +11,10 @@ body {
 .header {
     grid-area: header;
 }
-
-.footer {
-    grid-area: footer;
+.hero {
+    grid-area: hero;
 }
+
 .wrapper {
     display: grid;
     grid-gap: 10px;
@@ -22,7 +22,7 @@ body {
     grid-template-areas: 
         "....... header header"
         "sidebar content content"
-        "footer footer footer"
+        "hero hero hero";
     background-color: #fff;
     color: #444;
 }
@@ -35,6 +35,6 @@ body {
     font-size: 150%;
 }
 
-.header, .footer {
+.header {
     background-color: #999;
 }
