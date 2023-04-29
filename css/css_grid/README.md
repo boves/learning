@@ -19,3 +19,4 @@ Too tired to do anything. At a wedding. Will work on this tomorrow!
 Ok, way too tired again, and I don't have time to write code. I'm going to head out and see if there's any music to be found around town in Doolin.
 
 I got stuck out of the house today and couldn't get to a desk to code. So, yet again another commit!
+Omg same.
