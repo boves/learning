@@ -21,3 +21,4 @@ Ok, way too tired again, and I don't have time to write code. I'm going to head 
 I got stuck out of the house today and couldn't get to a desk to code. So, yet again another commit!
 Omg same.
 Well, this trip has been really unproductive for coding hahaha. That's ok, I'm glad that I kept writing here, though! I didn't realize I ran out of the tutorial that I was going through.
+Well, it's really late, but I'm finally home. Definitely not coding. Goodnight!
