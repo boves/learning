@@ -22,3 +22,4 @@ I got stuck out of the house today and couldn't get to a desk to code. So, yet a
 Omg same.
 Well, this trip has been really unproductive for coding hahaha. That's ok, I'm glad that I kept writing here, though! I didn't realize I ran out of the tutorial that I was going through.
 Well, it's really late, but I'm finally home. Definitely not coding. Goodnight!
+Saaaaame. Jet lag is hitting me hard.
