@@ -23,3 +23,4 @@ Omg same.
 Well, this trip has been really unproductive for coding hahaha. That's ok, I'm glad that I kept writing here, though! I didn't realize I ran out of the tutorial that I was going through.
 Well, it's really late, but I'm finally home. Definitely not coding. Goodnight!
 Saaaaame. Jet lag is hitting me hard.
+Yeah, I really need to commit to this again. Oh well. Have a good night!
