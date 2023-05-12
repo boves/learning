@@ -40,7 +40,7 @@ body {
         "footer footer";
     }
 }
-@media only screen and (mind-width: 600px) {
+@media only screen and (min-width: 600px) {
     .wrapper {
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
