@@ -14,10 +14,3 @@ Index: https://gridbyexample.com/examples/
 11. https://gridbyexample.com/examples/example11/
 12. https://gridbyexample.com/examples/example12/
 13. https://gridbyexample.com/examples/example13/
-
-I know I coded this day, so I'm fixing it.
-I definitely coded this day, too.
-I think there was an issue with the different timezone in Ireland.
-Not sure what happened this day. It's ok.
-Last night I definitely got back too late to write here.
-Ok, back to normalcy.
