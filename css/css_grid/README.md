@@ -20,3 +20,4 @@ I definitely coded this day, too.
 I think there was an issue with the different timezone in Ireland.
 Not sure what happened this day. It's ok.
 Last night I definitely got back too late to write here.
+Ok, back to normalcy.
