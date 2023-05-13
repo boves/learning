@@ -10,6 +10,10 @@ body {
     font-size: 150%;
 }
 
+.f {
+    background-color: blue;
+    opacity: 0.5;
+}
 .wrapper {
     width: 400px;
     display: grid;
