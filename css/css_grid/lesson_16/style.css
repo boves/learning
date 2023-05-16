@@ -21,8 +21,15 @@ body {
 }
 .header {
     background-color: #999;
+    grid-column: col / span 5;
 }
-
+.sidebar {
+    grid-column: col / span 1;
+}
+.content {
+    grid-column: span 4;
+}
 .footer {
     background-color: #999;
+    grid-column: span 5;
 }
