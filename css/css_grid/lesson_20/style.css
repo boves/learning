@@ -10,11 +10,6 @@ body {
     font-size: 150%;
 }
 
-.box:nth-child(even) {
-    background-color: #ccc;
-    color: #000;
-}
-
 .wrapper {
     width: 600px;
     display: grid;
