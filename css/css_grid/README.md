@@ -21,7 +21,3 @@ Index: https://gridbyexample.com/examples/
 18. https://gridbyexample.com/examples/example18/
 19. https://gridbyexample.com/examples/example19/
 20. https://gridbyexample.com/examples/example20/
-I don't have any time to code. Long day. Slán!
-Saaaame.
-Yet again.
-Definitely just need the time off today.
