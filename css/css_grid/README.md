@@ -24,4 +24,4 @@ Index: https://gridbyexample.com/examples/
 21. https://gridbyexample.com/examples/example21/
 Happy memorial day!
 At Kim's. Will code soon!
-Ok, I lied. Had a long day. Slán!
+Coded today, but it was at work, so it didn't get counted.
