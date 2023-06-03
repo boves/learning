@@ -26,3 +26,4 @@ Happy memorial day!
 At Kim's. Will code soon!
 Coded today, but it was at work, so it didn't get counted.
 Or maybe that was today. Who knows!
+I'm going to do it again haha.
