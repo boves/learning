@@ -27,3 +27,4 @@ At Kim's. Will code soon!
 Coded today, but it was at work, so it didn't get counted.
 Or maybe that was today. Who knows!
 I'm going to do it again haha.
+Ok, this is becoming a pattern. That's ok! The point is that a coder makes a commit every day in GitHub. Or, at least the kind of coder that I want to be. Goodnight!
