@@ -24,3 +24,4 @@ Index: https://gridbyexample.com/examples/
 21. https://gridbyexample.com/examples/example21/
 22. https://gridbyexample.com/examples/example22/
 23. https://gridbyexample.com/examples/example23/
+24. https://gridbyexample.com/examples/example24/
