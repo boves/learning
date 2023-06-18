@@ -30,3 +30,4 @@ I have some more coding to do for work, so I'm going say "ditto."
 Ditto.
 Maybe later.
 It's a pattern at this point. Oh well!
+I've been sick for the last two days. Hard pass. 
