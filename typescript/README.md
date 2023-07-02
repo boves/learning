@@ -6,3 +6,4 @@ Chuaigh mé go dtí an uisceadán inniu le mo chara mar sin ní raibh aon t-am 
 Tá mé tuirseach inniu agus níl mé ag iarraidh códú inniu. Slán go fóill!
 Úps. Tá mise go mall (busy?) fós.
 I'm not busy today. I just don't want to code. Slán!
+Yeah, there's just no way I'm going to code today. Slán!
