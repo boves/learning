@@ -7,3 +7,4 @@ Tá mé tuirseach inniu agus níl mé ag iarraidh códú inniu. Slán go fóil
 Úps. Tá mise go mall (busy?) fós.
 I'm not busy today. I just don't want to code. Slán!
 Yeah, there's just no way I'm going to code today. Slán!
+Inniu Dé Luaith agus níl mé ag iarraidh códú ar bith. Slán!
