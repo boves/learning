@@ -11,3 +11,4 @@ Inniu Dé Luaith agus níl mé ag iarraidh códú ar bith. Slán!
 Inniu an Ceathrú de Iúil, mar sin, níl mé chun códú ar bith aríst. Slán!
 An chéanna mar inné. Slán!
 The power is out. Not going to bother again today, either. Slán!
+Tá mé tuirseach inniu, ar ndóigh. Slán!
