@@ -13,3 +13,4 @@ An chéanna mar inné. Slán!
 The power is out. Not going to bother again today, either. Slán!
 Tá mé tuirseach inniu, ar ndóigh. Slán!
 Inniu Dé Sathairn agus tá mé ag teach na dtuismitheoirí. Slán!
+Níl mé ag iarraidh códáil a dhéanamh inniu freisin, ach bheinn ag iarraudh códú a thosú go luath. Slán!
