@@ -16,3 +16,4 @@ Inniu Dé Sathairn agus tá mé ag teach na dtuismitheoirí. Slán!
 Rinne mé dearmard ar códú Dé Domhnaigh 
 Níl mé ag iarraidh códáil a dhéanamh inniu freisin, ach bheinn ag iarraudh códú a thosú go luath. Slán!
 Tá sé trí nóiméad don meán lae agus níl mé ag iarraidh códú aríst. Slán!
+An cheanna. Slán!
