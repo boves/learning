@@ -18,3 +18,4 @@ Níl mé ag iarraidh códáil a dhéanamh inniu freisin, ach bheinn ag iarraudh 
 Tá sé trí nóiméad don meán lae agus níl mé ag iarraidh códú aríst. Slán!
 An cheanna. Slán!
 Níl aon t-am agam inniu freisin. Slán!
+Níl a fhios agam an bhfuil an t-am agam, ach níl mé ag iarraidh á dhéanamh, go cinnte. Slán!
