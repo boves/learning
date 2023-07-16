@@ -19,3 +19,4 @@ Tá sé trí nóiméad don meán lae agus níl mé ag iarraidh códú aríst. S
 An cheanna. Slán!
 Níl aon t-am agam inniu freisin. Slán!
 Níl a fhios agam an bhfuil an t-am agam, ach níl mé ag iarraidh á dhéanamh, go cinnte. Slán!
+Bhí lá fhad ach go maith agam inniu. Slán!
