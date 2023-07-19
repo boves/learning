@@ -22,3 +22,4 @@ Níl a fhios agam an bhfuil an t-am agam, ach níl mé ag iarraidh á dhéanamh
 Bhí lá fhad ach go maith agam inniu. Slán!
 Inniu an cheanna. Bhuel, slán go fóill agus oíche mhaith!
 Bhuel, bhuel, bhuel. Tá muid ag buail le chéile aríst. Slán go fóill!
+Bhuel, tá mise sa teach na dtuismitheoirí aríst. Mar sin, níl aon chódú a ndearnamh mé.
