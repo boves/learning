@@ -24,3 +24,4 @@ Inniu an cheanna. Bhuel, slán go fóill agus oíche mhaith!
 Bhuel, bhuel, bhuel. Tá muid ag buail le chéile aríst. Slán go fóill!
 Bhuel, tá mise sa teach na dtuismitheoirí aríst. Mar sin, níl aon chódú a ndearnamh mé.
 Tá sé leathuair tar éis a cúig agus níl mé ag iarraidh códú ar bith freisin. Slán!
+Tá mé ag úasghrádú mo ríomhaire eile anois. Is gá dhom réiteach mé féin imeacht freisin. Slán!
