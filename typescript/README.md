@@ -26,3 +26,4 @@ Bhuel, tá mise sa teach na dtuismitheoirí aríst. Mar sin, níl aon chódú a 
 Tá sé leathuair tar éis a cúig agus níl mé ag iarraidh códú ar bith freisin. Slán!
 Tá mé ag úasghrádú mo ríomhaire eile anois. Is gá dhom réiteach mé féin imeacht freisin. Slán!
 An cheanna.
+Tá tinneas boilg orm. Slán!
