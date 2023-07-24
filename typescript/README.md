@@ -27,3 +27,4 @@ Tá sé leathuair tar éis a cúig agus níl mé ag iarraidh códú ar bith 
 Tá mé ag úasghrádú mo ríomhaire eile anois. Is gá dhom réiteach mé féin imeacht freisin. Slán!
 An cheanna.
 Tá tinneas boilg orm. Slán!
+Bhí mé sa gcathair ar feadh an lá ar fad. Mar sin, ní raibh mé aon chódú a dhéanamh inniu aríst. Slán!
