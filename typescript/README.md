@@ -30,3 +30,4 @@ Tá tinneas boilg orm. Slán!
 Bhí mé sa gcathair ar feadh an lá ar fad. Mar sin, ní raibh mé aon chódú a dhéanamh inniu aríst. Slán!
 Tá mé ag teach na dtuismitheoirí aríst agus beidh mé chun goil go dtí an phictiúrlann le cúpla caraid le haghaidh scannán a féachaint.
 Tá tinneas boilg orm aríst. Mar sin, slán!
+Bhuel, beidh fúm códú amáireach. Slán go dtí an t-am sin!
