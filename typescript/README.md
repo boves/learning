@@ -32,4 +32,4 @@ Tá mé ag teach na dtuismitheoirí aríst agus beidh mé chun goil go dtí an
 Tá tinneas boilg orm aríst. Mar sin, slán!
 Bhuel, beidh fúm códú amáireach. Slán go dtí an t-am sin!
 Rinne mé dearmad air commit-áil ag an 29ú Meitheamh.
-Rinne mé dearmad air commit-áil ag an 27ú Iúil
+Rinne mé dearmad air commit-áil ag an 24ú Iúil
