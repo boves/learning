@@ -16,8 +16,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React, and make your dreams come true!
         </a>
+        <p>
+          Or, I mean, like, steal some money.
+        </p>
       </header>
     </div>
   );
