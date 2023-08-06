@@ -34,3 +34,4 @@ Bhuel, beidh fúm códú amáireach. Slán go dtí an t-am sin!
 Rinne mé dearmad air commit-áil ag an 09ú Meitheamh.
 Rinne mé dearmad air commit-áil ag an 24ú Iúil.
 Sin é (faoi láthair).
+Bhoil, tá sé in am agam gan códú aríst. Slán!
