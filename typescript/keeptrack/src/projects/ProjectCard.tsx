@@ -11,6 +11,9 @@ interface ProjectCardProps {
 
 function ProjectCard(props: ProjectCardProps) {
     const { project } = props;
+    const handleEditClick = (projectBeingEdited: Project ) => {
+        console.log(projectBeingEdited);
+    };
     return (
         <div className='card'>
             <img src={project.imageUrl} alt={project.name} />
