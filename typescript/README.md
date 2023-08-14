@@ -38,3 +38,4 @@ Bhoil, tá sé in am agam gan códú aríst. Slán!
 Tá mé ag fadhbanna de LeetCode a dhéanamh, mar sin, ní bheidh mé ag códáil anseo inniu. Slán!
 Rinne mé mo chuid códú an lá seo, cinnte!
 Tá mé ag teach na dtuismitheoirí anois. Slán!
+Níl mé ag iarraidh códú aríst inniu. Slán!
