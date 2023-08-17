@@ -40,3 +40,4 @@ Rinne mé mo chuid códú an lá seo, cinnte!
 Tá mé ag teach na dtuismitheoirí anois. Slán!
 Níl mé ag iarraidh códú aríst inniu. Slán!
 Tá mé ag teafch na dtuismitheoirí aríst. Slán!
+Tá mé ro–thuirseach le haighaidh códáil inniu. Slán!
