@@ -42,3 +42,4 @@ Níl mé ag iarraidh códú aríst inniu. Slán!
 Tá mé ag teafch na dtuismitheoirí aríst. Slán!
 Tá mé ro–thuirseach le haighaidh códáil inniu. Slán!
 Rinne mé mo chuid códáil i LeetCode inniu. Slán!
+Rinne me mo chuid códáil i LeetCode arist. Slán!
