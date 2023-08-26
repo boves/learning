@@ -46,3 +46,4 @@ Rinne me mo chuid códáil i LeetCode aríst. Slán!
 Rinne mé dearmad ar gcódáil inniu. Ó bhoil. Slán!
 Thosaigh mé ag obair inniu, agus chuaigh mé go Bolingbrook le leanbh nua na gcairde a fhéiceáil.
 Bhí mé ró-ghnóthach leis an obair inniu aríst. Slán!
+Bhí dhá choinne le beirt dhochtúiri difriúla agus dhá chruinniú ghnó agam inniu. Mar sin, tá mé ró-thuirseach agus ró-ghnóthach le aon chódáil a dhéanamh. Slán!
