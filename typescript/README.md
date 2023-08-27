@@ -49,3 +49,4 @@ Bhí mé ró-ghnóthach leis an obair inniu aríst. Slán!
 Bhí dhá choinne le beirt dhochtúiri difriúla agus dhá chruinniú ghnó agam inniu. Mar sin, tá mé ró-thuirseach agus ró-ghnóthach le aon chódáil a dhéanamh. Slán!
 Bhoil, tá mé ró-thuirseach inniu agus ní raibh aon chódáil a dhéarnamh mé inniu. Slán!
 Rinne mé dearmad ar chódáil ar an lá sin mar chuaigh mé i mo luí go luath. Slán!
+An cheanna.
