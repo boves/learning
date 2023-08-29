@@ -50,3 +50,4 @@ Bhí dhá choinne le beirt dhochtúiri difriúla agus dhá chruinniú ghnó aga
 Bhoil, tá mé ró-thuirseach inniu agus ní raibh aon chódáil a dhéarnamh mé inniu. Slán!
 Rinne mé dearmad ar chódáil ar an lá sin mar chuaigh mé i mo luí go luath. Slán!
 An cheanna.
+Úps
