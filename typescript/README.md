@@ -51,3 +51,4 @@ Bhoil, tá mé ró-thuirseach inniu agus ní raibh aon chódáil a dhéarnamh 
 Rinne mé dearmad ar chódáil ar an lá sin mar chuaigh mé i mo luí go luath. Slán!
 An cheanna.
 Úps x2.
+D'oibrigh mé ar feadh beagnach hocht uair an chloig inniu. Slán!
