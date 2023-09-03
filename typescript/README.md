@@ -54,3 +54,4 @@ An cheanna.
 D'oibrigh mé ar feadh beagnach hocht uair an chloig inniu. Slán!
 Bhí lá fada agam inniu. Slán!
 Tá mise tuirseach aríst. Slán go fóill!
+Chuaigh mé go dtí an Ren Faire inniu. Slán!
