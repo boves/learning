@@ -57,3 +57,4 @@ Tá mise tuirseach aríst. Slán go fóill!
 Chuaigh mé go dtí an Ren Faire inniu. Slán!
 Cheap mé gur scríobh mé inniu, ach níor scríobhas!
 Tharla an cheanna an lá seo freisin.
+D'oibrigh mé go leor inniu agus ní raibh an t-am le haghaidh scródú.
