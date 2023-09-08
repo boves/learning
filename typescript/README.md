@@ -60,3 +60,4 @@ Tharla an cheanna an lá seo freisin.
 D'oibrigh mé go leor inniu agus ní raibh an t-am le haghaidh scródú.
 Bhoil, caithfidh mé códáil go luath háhá.
 Níl aon chódáil a ndearnaigh mé inniu.
+Ceapaim nach bheidh an t-am amáireach, freisin. Ó bhoil!
