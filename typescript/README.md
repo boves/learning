@@ -61,3 +61,5 @@ D'oibrigh mé go leor inniu agus ní raibh an t-am le haghaidh scródú.
 Bhoil, caithfidh mé códáil go luath háhá.
 Níl aon chódáil a ndearnaigh mé inniu.
 Ceapaim nach bheidh an t-am amáireach, freisin. Ó bhoil!
+Ní dhearnadh mé aon chódáil amháin ar 8 mí dheireadh fómhair.
+Ní dhearnadh mé aon chódáil amháin ar 9 mí dheireadh fómhair.
