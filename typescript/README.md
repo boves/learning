@@ -63,4 +63,4 @@ Níl aon chódáil a ndearnaigh mé inniu.
 Ceapaim nach bheidh an t-am amáireach, freisin. Ó bhoil!
 Ní dhearnadh mé aon chódáil amháin ar 8 mí dheireadh fómhair.
 Ní dhearnadh mé aon chódáil amháin ar 9 mí dheireadh fómhair. Tá a fhios am é seo.
-Bhoil, beidh sé níos tapa ná an nós a úsáid 
+Bhoil, beidh sé níos tapa ná an nós a úsáid riamh.
