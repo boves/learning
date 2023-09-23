@@ -7,6 +7,7 @@ function formatDescription(description: string): string {
 
 interface ProjectCardProps {
     project: Project;
+    onEdit: (project: Project) => void;
 }
 
 function ProjectCard(props: ProjectCardProps) {
